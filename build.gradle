@@ -1,0 +1,23 @@
+plugins {
+    id 'java-library'
+    id 'org.checkerframework' version '0.4.10'
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+}
+
+repositories {
+    mavenCentral()
+}
+
+version = '1.2.1'
+
+apply plugin: 'org.checkerframework'
+
+checkerFramework {
+  checkers = [
+    'org.checkerframework.checker.nullness.NullnessChecker'
+  ]
+}
