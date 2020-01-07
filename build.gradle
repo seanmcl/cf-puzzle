@@ -21,3 +21,11 @@ checkerFramework {
     'org.checkerframework.checker.nullness.NullnessChecker'
   ]
 }
+
+checkerFramework {
+  extraJavacArgs = [
+    '-verbose',
+    '-AprintAllQualifiers',
+    '-Werror',
+  ]
+}
